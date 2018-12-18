@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAMO</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="./resources/style.css" type="text/css" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <main>
+  <div class="wrapper" data-selected="home">
+    <div class="page active" id="home">
+      <div class="indro">
+      <h1 class="introducing">Hi</h1>
+      <h1 class="introducing">i'm Jack</h1>
+      <h1 class="introducing">web designer</h1>
+    </div>
+
+    </div>
+    <div class="page" id="explore">
+      <img class="background" src="https://images.unsplash.com/photo-1496979149951-4fd28cf221e7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=532a0b2923b29ab65f2127a7dba2c3e5&auto=format&fit=crop&w=634&q=80">
+    </div>
+    <div class="page" id="shop">
+      <img class="background" src="https://images.unsplash.com/photo-1508789487053-233ecb6ea2b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b8a733e6a8e67175500b46e5b0721d87&auto=format&fit=crop&w=1397&q=80">
+    </div>
+    <div class="page" id="learn">
+      <img class="background" src="https://images.unsplash.com/photo-1505963794678-ecff89c15a57?ixlib=rb-0.3.5&s=45edd17e9c58653018a9706a7548d9c1&auto=format&fit=crop&w=1350&q=80">
+    </div>
+  </div>
+  <nav id="side">
+    <button id="nav-toggle">
+      <span class="hamburger">&equiv;</span>
+    </button>
+    <ul class="menu">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#learn">Learn</a></li>
+    </ul>
+  </nav>
+</main>
+    <script type="text/javascript">
+
+    TweenMax.to(".overlay h1", 2, {
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay", 2, {
+      delay: 1,
+      top: "-100%",
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".logo", 1.7, {
+      delay: 2.4,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".nav ul li", 1, {
+      delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".introducing", 1.5, {
+      delay: 0.1, opacity: 0, y: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.from(".side-strip", 2, {
+      delay: 2.4,
+      opacity: 0,
+      x: 40,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".row", 2, {
+           delay: 2.4,
+           opacity: 0,
+           x: 40,
+           ease: Expo.easeInOut
+     })
+
+    TweenMax.from(".row h6", 2, {
+      delay: 2.4,
+      opacity: 0,
+      y: 40,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".row p", 2, {
+      delay: 3.2,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".header h1", 2, {
+      delay: 3.2,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".header p", 2, {
+      delay: 3.2,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".header button", 2, {
+      delay: 3.6,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    </script>
+    <script type="text/javascript">
+
+    var main = document.querySelector("main"),
+    anchors = document.querySelectorAll('ul.menu a');
+
+document.getElementById("nav-toggle").addEventListener("click", function (e) {
+
+  var scrollPosition;
+
+  if (main.classList.contains('open')) {
+
+    scrollPosition = document.querySelector(".wrapper").scrollTop;
+    main.classList.remove('open');
+    main.classList.add('transitioning');
+
+    window.setTimeout(function (dom, scrollTo) {
+      main.classList.remove('transitioning');
+      window.scrollTo(0, scrollTo);
+    }, 300, main, scrollPosition);
+
+  } else {
+
+    scrollPosition = window.pageYOffset;
+    main.classList.add('open');
+    document.querySelector(".wrapper").scrollTo(0, scrollPosition);
+
+  }
+
+
+
+});
+
+function previewSlide(e) {
+  e.preventDefault();
+
+  var old = document.querySelector(".page.preview");
+
+  if (old) {
+    old.classList.remove('preview');
+  }
+
+  var target = e.currentTarget.getAttribute("href"),
+      page = document.querySelector(target);
+
+  page.classList.add('preview');
+}
+
+function changeSlide(e) {
+  e.preventDefault();
+
+
+
+  var target = e.currentTarget.getAttribute("href"),
+      page = document.querySelector(target);
+
+  main.classList.add('transitioning');
+
+  window.setTimeout(function (dom, selected) {
+    dom.classList.remove("open");
+    dom.querySelector(".wrapper").setAttribute("data-selected", selected.id);
+  }, 250, main, page);
+
+  window.setTimeout(function (dom, selected) {
+    dom.classList.remove("transitioning");
+    dom.querySelector(".page.active").classList.remove('active');
+    selected.classList.add('active');
+  }, 750, main, page);
+}
+
+for (var i = 0; i < anchors.length; i += 1) {
+  anchors[i].addEventListener('click', changeSlide);
+  anchors[i].addEventListener('mouseover', previewSlide);
+  anchors[i].addEventListener('mouseout', function () {
+    document.querySelector(".page.preview").classList.remove('preview');
+  });
+}
+
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,252 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* font-family: Poppins !important; */
+}
+
+body {
+  background: url(./images/unslash02.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #38c5b9;
+  font-family: "Open Sans";
+  color: white;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', sans-serif;
+}
+body {
+  box-sizing: border-box;
+}
+body * {
+  box-sizing: inherit;
+}
+
+#side {
+/*  position: fixed; */
+  background: #181818;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: width 0.4s, background 0.9s;
+  overflow: hidden;
+  z-index: 10;
+}
+#side .hamburger {
+  transition: color 0.3s;
+}
+#side ul.menu {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    opacity: 0;
+}
+#side ul.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+#side ul.menu li {
+  margin-top: 10px;
+  line-height: 1;
+}
+main.open #side ul.menu {
+  left: 60px;
+  opacity: 1;
+}
+#side::before {
+  background: #0083cb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.6s, background-color 0.6s;
+}
+
+.wrapper[data-selected="explore"] ~ nav#side {
+    background: linear-gradient(#e2401c, #fd7c14);
+}
+main.open:not(.transitioning) .wrapper[data-selected="explore"] ~ nav#side::before {
+  background: #fd7c14;
+}
+
+.wrapper[data-selected="shop"] ~ nav#side {
+  background: linear-gradient(#efd97d, #af992d);
+}
+main.open .wrapper[data-selected="shop"] ~ nav#side::before {
+  background: #efd97d;
+}
+main.open .wrapper[data-selected="shop"] ~ nav#side .hamburger {
+  color: black;
+}
+main.open .wrapper[data-selected="shop"] ~ nav#side .menu a {
+  color: black;
+}
+
+.wrapper[data-selected="explore"] ~ nav#side {
+    background: linear-gradient(#e2401c, #fd7c14);
+}
+main.open .wrapper[data-selected="explore"] ~ nav#side::before {
+  background: #e2401c;
+}
+.wrapper[data-selected="learn"] ~ nav#side {
+  background: linear-gradient(#00b674, #1f6121);
+}
+main.open .wrapper[data-selected="learn"] ~ nav#side::before {
+  background: #1f6121;
+}
+
+#nav-toggle {
+  appearance: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 61px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  background: transparent;
+  border: 0;
+  font-family: arial, sans-serif;
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);*/
+  z-index: 1;
+  transition: all 0.3s;
+  outline: none !important;
+  cursor: pointer;
+}
+main.open #nav-toggle {
+  top: 40px;
+  left: 42px;
+}
+
+.wrapper {
+  transform-origin: 75% 50%;
+  position: relative;
+  z-index: 20;
+  transition: transform 0.5s;
+  margin-left: 60px;
+  width: calc(100% - 60px);
+}
+.transitioning .wrapper {
+  transform: scale(0.75) translateX(150%);
+}
+main {
+  overflow-x: hidden;
+}
+main.open, main.transitioning {
+  overflow: hidden;
+  height: 100vh;
+}
+main.transitioning .wrapper,
+main.open .wrapper {
+  overflow: hidden;
+  max-height: 100vh;
+}
+main.open .wrapper {
+  transform: scale(0.75);
+}
+main.open nav#side {
+  width: 100%;
+}
+main.open nav#side::before {
+  opacity: 1;
+}
+
+.page {
+  //overflow: scroll-y;
+  min-height: 100vh;
+  position: relative;
+  opacity: 0;
+
+  transition: transform 0.4s;
+  display: none;
+}
+.page.active {
+  opacity: 1;
+  display: block;
+}
+
+.page .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+p {
+  background: rgba(255, 255, 255, 0.85);
+  font-family: 'Open Sans', arial;
+  padding: 10px;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+#home {
+  background-color: #252627 !important;
+}
+
+
+.introducing {
+
+}
+
+.indro {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    white-space: nowrap;
+    line-height: 44px;
+    z-index: 2;
+    color: #fff;
+}
+
+
+.menu {
+  z-index: 99;
+}
+
+
+@media screen and (max-width: 600px) {
+  #nav-toggle {
+    z-index: 99 !important;
+    left: 55px;
+  }
+  .wrapper {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
