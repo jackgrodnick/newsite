@@ -242,8 +242,8 @@ p {
 
 @media screen and (max-width: 600px) {
   #nav-toggle {
-  /*  z-index: 99 !important; */
-    left: 55px;
+    z-index: 99 !important;
+/*    left: 55px; */
   }
   .wrapper {
     margin-left: 0 !important;
