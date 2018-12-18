@@ -243,9 +243,11 @@ p {
 @media screen and (max-width: 600px) {
   #nav-toggle {
     z-index: 99 !important;
+    left: 42px !important;
   }
   .wrapper {
     margin-left: 0 !important;
+    margin-left: 0 !important
     width: 100% !important;
   }
 }
