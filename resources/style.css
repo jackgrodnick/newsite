@@ -29,9 +29,11 @@ body, html {
   padding: 0;
   font-family: 'Fredoka One', sans-serif;
 }
+
 body {
   box-sizing: border-box;
 }
+
 body * {
   box-sizing: inherit;
 }
@@ -48,37 +50,43 @@ body * {
   overflow: hidden;
   z-index: 10;
 }
+
 #side .hamburger {
   transition: color 0.3s;
 }
+
 #side ul.menu {
-    position: absolute;
-    left: 100px;
-    top: 100px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s;
-    opacity: 0;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  opacity: 0;
 }
+
 #side ul.menu a {
   color: white;
   text-decoration: none;
   font-size: 30px;
   transition: color 0.3s;
 }
+
 #side ul.menu li {
   margin-top: 10px;
   line-height: 1;
 }
+
 main.open #side ul.menu {
   left: 60px;
   opacity: 1;
 }
+
 #side::before {
-  background: #0083cb;
+  background: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -91,8 +99,9 @@ main.open #side ul.menu {
 }
 
 .wrapper[data-selected="explore"] ~ nav#side {
-    background: linear-gradient(#e2401c, #fd7c14);
+  background: linear-gradient(#e2401c, #fd7c14);
 }
+
 main.open:not(.transitioning) .wrapper[data-selected="explore"] ~ nav#side::before {
   background: #fd7c14;
 }
@@ -100,25 +109,31 @@ main.open:not(.transitioning) .wrapper[data-selected="explore"] ~ nav#side::befo
 .wrapper[data-selected="shop"] ~ nav#side {
   background: linear-gradient(#efd97d, #af992d);
 }
+
 main.open .wrapper[data-selected="shop"] ~ nav#side::before {
   background: #efd97d;
 }
+
 main.open .wrapper[data-selected="shop"] ~ nav#side .hamburger {
   color: black;
 }
+
 main.open .wrapper[data-selected="shop"] ~ nav#side .menu a {
   color: black;
 }
 
 .wrapper[data-selected="explore"] ~ nav#side {
-    background: linear-gradient(#e2401c, #fd7c14);
+  background: linear-gradient(#e2401c, #fd7c14);
 }
+
 main.open .wrapper[data-selected="explore"] ~ nav#side::before {
   background: #e2401c;
 }
+
 .wrapper[data-selected="learn"] ~ nav#side {
   background: linear-gradient(#00b674, #1f6121);
 }
+
 main.open .wrapper[data-selected="learn"] ~ nav#side::before {
   background: #1f6121;
 }
@@ -145,6 +160,7 @@ main.open .wrapper[data-selected="learn"] ~ nav#side::before {
   outline: none !important;
   cursor: pointer;
 }
+
 main.open #nav-toggle {
   top: 40px;
   left: 42px;
@@ -158,27 +174,34 @@ main.open #nav-toggle {
   margin-left: 60px;
   width: calc(100% - 60px);
 }
+
 .transitioning .wrapper {
   transform: scale(0.75) translateX(150%);
 }
+
 main {
   overflow-x: hidden;
 }
+
 main.open, main.transitioning {
   overflow: hidden;
   height: 100vh;
 }
+
 main.transitioning .wrapper,
 main.open .wrapper {
   overflow: hidden;
   max-height: 100vh;
 }
+
 main.open .wrapper {
   transform: scale(0.75);
 }
+
 main.open nav#side {
   width: 100%;
 }
+
 main.open nav#side::before {
   opacity: 1;
 }
@@ -241,4 +264,22 @@ p {
 
 
 @media screen and (max-width: 600px) {
+  .wrapper {
+     margin-left: 0px;
+     width: 100%;
+  }
+  #side {
+    position: fixed;
+    background: transparent;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: width 0.4s, background 0.9s;
+    overflow: hidden;
+    z-index: 29;
+}
+
+
 }
