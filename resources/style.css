@@ -280,10 +280,5 @@ p {
     overflow: hidden;
     z-index: 29;
 }
-main.open #nav-toggle {
-    top: 40px;
-    left: 20px;
-}
-
 
 }
