@@ -249,4 +249,7 @@ p {
     margin-left: 0 !important;
     width: 100% !important;
   }
+#nav-toggle {
+  width: 0px !important;
+}
 }
