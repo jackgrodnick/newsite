@@ -281,7 +281,7 @@ p {
     z-index: 29;
 }
 #nav-toggle {
-  width: fit-content;
+  padding: 0px;
 }
 
 }
