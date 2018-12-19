@@ -263,7 +263,7 @@ p {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .wrapper {
      margin-left: 0px;
      width: 100%;
@@ -279,6 +279,10 @@ p {
     transition: width 0.4s, background 0.9s;
     overflow: hidden;
     z-index: 29;
+}
+#nav-toggle {
+  width: 0;
+  padding: 0px;
 }
 
 }
