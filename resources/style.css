@@ -66,6 +66,7 @@ body * {
   flex-direction: column;
   transition: all 0.3s;
   opacity: 0;
+  z-index: -5;
 }
 
 #side ul.menu a {
@@ -83,6 +84,7 @@ body * {
 main.open #side ul.menu {
   left: 60px;
   opacity: 1;
+  z-index: 99999999999;
 }
 
 #side::before {
