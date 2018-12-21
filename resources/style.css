@@ -303,7 +303,7 @@ p {
 
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 2000px) and (orientation: landscape) {
   #nav-toggle {
     padding: 0px;
   }
