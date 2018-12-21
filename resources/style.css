@@ -162,6 +162,7 @@ main.open .wrapper[data-selected="learn"] ~ nav#side::before {
   transition: all 0.3s;
   outline: none !important;
   cursor: pointer;
+  padding: 0px;
 }
 
 main.open #nav-toggle {
