@@ -79,6 +79,7 @@ body * {
 #side ul.menu li {
   margin-top: 10px;
   line-height: 1;
+  font-weight: bolder;
 }
 
 main.open #side ul.menu {
