@@ -447,7 +447,7 @@ transform: rotate(90deg);
 }
 
 #home {
-  min-height: 91vh;
+  min-height: 80vh;
     height: -webkit-fill-available;
 }
 
