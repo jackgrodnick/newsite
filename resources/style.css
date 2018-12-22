@@ -286,7 +286,7 @@ p {
    width: 100%;
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .wrapper {
      margin-left: 0px;
      width: 100%;
@@ -311,7 +311,7 @@ p {
 
 }
 
-@media (max-width: 2000px) and (orientation: portrait) {
+ @media (max-width: 2000px) and (orientation: portrait) {
 
 }
 
@@ -331,7 +331,7 @@ p {
     overflow: hidden;
     z-index: 29;
 }
-}
+} */
 
 .bottom-right {
 width: fit-content;
