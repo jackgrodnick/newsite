@@ -443,6 +443,10 @@ transform: rotate(90deg);
   height: -webkit-fill-available !important;
 }
 
-.page {
+#home {
   min-height: 90vh;
+}
+
+#home {
+  max-height: 101vh;
 }
