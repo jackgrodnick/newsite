@@ -312,14 +312,13 @@ p {
   padding: 0px;
 }
 #home {
-  height: 90vh !important;
 }
 
 }
 
 @media (max-width: 2000px) and (orientation: portrait) {
   .page {
-    max-height: 90vh !important;
+    height: -webkit-fill-available !important;
   }
 }
 
@@ -340,7 +339,7 @@ p {
     z-index: 29;
 }
 .page {
-  min-height: 100vh !important;
+  height: -webkit-fill-available !important;
 }
 }
 
