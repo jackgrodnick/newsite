@@ -17,7 +17,6 @@ body {
 }
 
 body {
-  min-height: 80vh;
   background: #38c5b9;
   font-family: "Open Sans";
   color: white;
@@ -214,7 +213,6 @@ main.open nav#side::before {
 
 .page {
   //overflow: scroll-y;
-  min-height: 90vh;
   position: relative;
   opacity: 0;
 
@@ -294,7 +292,7 @@ p {
      width: 100%;
   }
   body {
-    height: 90vh !important;
+    height: -webkit-fill-available !important;
   }
   #side {
     position: fixed;
