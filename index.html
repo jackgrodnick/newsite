@@ -20,6 +20,15 @@
   <div class="wrapper" data-selected="home">
     <div class="page active" id="home">
 
+      <div class="bottom-left">
+      <h1 class="bottom-left-top">Team</h1>
+      <h1 class="bottom-left-bottom">Jack, Colten, Lilly, Kyle</h1>
+    </div>
+
+      <div class="top-left">
+      <h1 class="top-left-top">©WE'RE RIGHT-static github site</h1>
+      <h1 class="top-left-bottom">Website</h1>
+    </div>
 
 
       <div class="top-right">
@@ -29,7 +38,7 @@
 
 
       <div class="bottom-right">
-      <h1 class="bottom-right-top">Made By</h1>
+      <h1 class="bottom-right-top">Designed By</h1>
       <h1 class="bottom-right-bottom">Jack Grodnick</h1>
     </div>
 
@@ -86,8 +95,36 @@
       delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
     }, 0.2)
 
-    TweenMax.staggerFrom(".introducing", 1.5, {
+    TweenMax.staggerFrom(".top-right-right", 1.5, {
+      delay: 0.1, opacity: 0, x: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".top-right-left", 1.5, {
+      delay: 0.6, opacity: 0, x: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".bottom-right-top", 1.5, {
       delay: 0.1, opacity: 0, y: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".bottom-right-bottom", 1.5, {
+      delay: 0.6, opacity: 0, y: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".top-left-bottom", 1.5, {
+      delay: 0.1, opacity: 0, y: -20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".top-left-top", 1.5, {
+      delay: 0.6, opacity: 0, y: -20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".bottom-left-top", 1.5, {
+      delay: 0.1, opacity: 0, y: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".bottom-left-bottom", 1.5, {
+      delay: 0.6, opacity: 0, y: 20, ease: Expo.easeInOut
     }, 0.2)
 
     TweenMax.from(".side-strip", 2, {
