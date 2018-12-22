@@ -442,3 +442,7 @@ transform: rotate(90deg);
 .wrapper {
   height: -webkit-fill-available !important;
 }
+
+.page {
+  min-height: 90vh;
+}
