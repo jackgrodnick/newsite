@@ -4,6 +4,7 @@ html, body {
   width: 100%;
   height: 100%;
   /* font-family: Poppins !important; */
+  font-family: 'Staatliches', cursive !important;
 }
 
 body {
@@ -58,7 +59,7 @@ body * {
 #side ul.menu {
   position: absolute;
   left: 100px;
-  top: 100px;
+  top: 38%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -145,7 +146,8 @@ main.open .wrapper[data-selected="learn"] ~ nav#side::before {
   appearance: none;
   position: absolute;
   left: 0;
-  top: 0;
+      margin-top: -38px;
+  top: 50%;
   width: 61px;
   height: 60px;
   display: flex;
@@ -166,7 +168,7 @@ main.open .wrapper[data-selected="learn"] ~ nav#side::before {
 }
 
 main.open #nav-toggle {
-  top: 40px;
+  top: 35%;
   left: 42px;
 }
 
@@ -218,7 +220,7 @@ main.open nav#side::before {
 
   transition: transform 0.4s;
   display: none;
-  padding: 200px;
+  padding: 25px;
 }
 .page.active {
   opacity: 1;
@@ -244,7 +246,10 @@ p {
 }
 
 #home {
-  background-color: #252627 !important;
+  background-image: url("./images/hhhjhjhk.png");
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+  background-position: right;
 }
 
 
@@ -278,7 +283,10 @@ p {
   overflow: hidden;
   z-index: 29;
 }
-
+.wrapper {
+   margin-left: 0px;
+   width: 100%;
+}
 
 @media screen and (max-width: 700px) {
   .wrapper {
@@ -319,4 +327,56 @@ p {
     overflow: hidden;
     z-index: 29;
 }
+}
+
+.bottom-right {
+width: fit-content;
+position: absolute;
+bottom: 16px;
+right: 25px;
+}
+
+.bottom-right-top {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-right-bottom {
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-right {
+  width: fit-content;
+  position: absolute;
+  top: 16px;
+  right: 25px;
+}
+
+.top-right-left {
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+  float: right;
+      text-align: right;
+      line-height: 0.97;
+          margin-top: 5px;
+}
+
+.top-right-right {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+    transform: rotate(-90deg);
+    float: right;
+    margin-top: 24px;
+        margin-right: -12px;
+
+}
+
+.spacing {
+  letter-spacing: 4px;
+    text-align: center;
 }
