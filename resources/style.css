@@ -284,6 +284,7 @@ p {
 .wrapper {
    margin-left: 0px;
    width: 100%;
+   height: -webkit-fill-available !important;
 }
 
 @media screen and (max-width: 700px) {
@@ -436,4 +437,8 @@ position: absolute;
 bottom: 77px;
 left: -34px;
 transform: rotate(90deg);
+}
+
+.wrapper {
+  height: -webkit-fill-available !important;
 }
