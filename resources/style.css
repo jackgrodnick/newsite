@@ -438,6 +438,12 @@ transform: rotate(90deg);
     padding:0;
 }
 
+@media screen {
+  #home {
+     height: 100vh !important;
+  }
+}
+
 main.open .logog {
   position: absolute;
   z-index: 99999 !important;
