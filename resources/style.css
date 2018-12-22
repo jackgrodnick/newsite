@@ -244,10 +244,10 @@ p {
 }
 
 #home {
-  background-image: url("./images/hhhjhjhk.png");
+  background-image: url("./images/turtle.jpg");
   background-repeat: no-repeat;
   background-size: cover, contain;
-  background-position: right;
+  background-position: center;
 }
 
 
@@ -433,4 +433,19 @@ transform: rotate(90deg);
 #home {
 height: -webkit-fill-available !important;
 height: 100vh !important;
+}
+
+main.open .logog {
+  position: absolute;
+  z-index: 99999 !important;
+  display: block;
+  width: 100%;
+    text-align: center;
+}
+
+.logog {
+  z-index: -5;
+  display: none;
+  width: 100%;
+    text-align: center;
 }
