@@ -383,3 +383,11 @@ right: 25px;
   letter-spacing: 4px;
     text-align: center;
 }
+
+.wrapper {
+  height: 80vh !important;
+}
+
+#home {
+  height: 80vh !important;
+}
