@@ -432,4 +432,5 @@ transform: rotate(90deg);
 
 #home {
 height: -webkit-fill-available !important;
+height: 110vh !important;
 }
