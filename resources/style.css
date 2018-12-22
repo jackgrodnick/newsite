@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 80vh;
   background: #38c5b9;
   font-family: "Open Sans";
   color: white;
@@ -294,7 +294,7 @@ p {
      width: 100%;
   }
   body {
-    height: 70vh;
+    height: 70vh !important;
   }
   #side {
     position: fixed;
