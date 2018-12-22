@@ -333,6 +333,9 @@ p {
     overflow: hidden;
     z-index: 29;
 }
+.page {
+  min-height: 100vh !important;
+}
 }
 
 .bottom-right {
