@@ -430,6 +430,6 @@ left: -34px;
 transform: rotate(90deg);
 }
 
-.wrapper {
+#home {
 height: -webkit-fill-available !important;
 }
