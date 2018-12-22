@@ -7,6 +7,11 @@ html, body {
   font-family: 'Staatliches', cursive !important;
 }
 
+body {
+  background: url(./images/unslash02.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +22,6 @@ body {
   color: white;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  height: -webkit-fill-available !important;
 }
 
 body, html {
@@ -211,7 +215,7 @@ main.open nav#side::before {
   //overflow: scroll-y;
   position: relative;
   opacity: 0;
-      height: -webkit-fill-available;
+
   transition: transform 0.4s;
   display: none;
   padding: 25px;
@@ -241,13 +245,6 @@ p {
 
 #home {
   background-image: url("./images/hhhjhjhk.png");
-  background-repeat: no-repeat;
-  background-size: cover, contain;
-  background-position: right;
-}
-
-body, #home {
-  background-image: url("./images/hhhjhjhk.png") !important;
   background-repeat: no-repeat;
   background-size: cover, contain;
   background-position: right;
@@ -287,7 +284,6 @@ body, #home {
 .wrapper {
    margin-left: 0px;
    width: 100%;
-   height: -webkit-fill-available !important;
 }
 
 @media screen and (max-width: 700px) {
@@ -296,7 +292,6 @@ body, #home {
      width: 100%;
   }
   body {
-    height: -webkit-fill-available !important;
   }
   #side {
     position: fixed;
@@ -313,15 +308,11 @@ body, #home {
 #nav-toggle {
   padding: 0px;
 }
-#home {
-}
 
 }
 
 @media (max-width: 2000px) and (orientation: portrait) {
-  .page {
-    height: -webkit-fill-available !important;
-  }
+
 }
 
 @media (max-width: 2000px) and (orientation: landscape) {
@@ -339,9 +330,6 @@ body, #home {
     transition: width 0.4s, background 0.9s;
     overflow: hidden;
     z-index: 29;
-}
-.page {
-  height: -webkit-fill-available !important;
 }
 }
 
@@ -443,14 +431,5 @@ transform: rotate(90deg);
 }
 
 .wrapper {
-  height: -webkit-fill-available !important;
-}
-
-#home {
-  min-height: 92vh;
-    height: -webkit-fill-available;
-}
-
-#home {
-  max-height: 101vh;
+height: -webkit-fill-available !important;
 }
