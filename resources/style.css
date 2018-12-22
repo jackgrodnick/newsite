@@ -311,6 +311,9 @@ p {
 #nav-toggle {
   padding: 0px;
 }
+#home {
+  height: 70vh !important;
+}
 
 }
 
@@ -382,8 +385,4 @@ right: 25px;
 .spacing {
   letter-spacing: 4px;
     text-align: center;
-}
-
-#home {
-  height: 50vh !important;
 }
