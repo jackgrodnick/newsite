@@ -218,7 +218,6 @@ main.open nav#side::before {
 
   transition: transform 0.4s;
   display: none;
-  padding: 25px;
 }
 .page.active {
   opacity: 1;
@@ -230,8 +229,6 @@ main.open nav#side::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   z-index: -1;
 }
 
@@ -281,7 +278,7 @@ p {
   overflow: hidden;
   z-index: 29;
 }
-.wrapper {
+ .wrapper {
    margin-left: 0px;
    width: 100%;
 }
@@ -308,13 +305,9 @@ p {
 #nav-toggle {
   padding: 0px;
 }
-
 }
-
  @media (max-width: 2000px) and (orientation: portrait) {
-
 }
-
 @media (max-width: 2000px) and (orientation: landscape) {
   #nav-toggle {
     padding: 0px;
@@ -430,11 +423,11 @@ left: -34px;
 transform: rotate(90deg);
 }
 
-@media screen {
+
   #home {
      height: -webkit-fill-available;
+     overflow: hidden;
   }
-}
 
 main.open .logog {
   position: absolute;
