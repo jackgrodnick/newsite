@@ -430,9 +430,12 @@ left: -34px;
 transform: rotate(90deg);
 }
 
-#home {
-height: -webkit-fill-available !important;
-height: 100vh !important;
+#home{
+    height: -moz-calc(100vh - 100px);
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh + 30px - 100px);
+    margin:0;
+    padding:0;
 }
 
 main.open .logog {
