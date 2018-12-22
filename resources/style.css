@@ -214,7 +214,7 @@ main.open nav#side::before {
 
 .page {
   //overflow: scroll-y;
-  min-height: 80vh;
+  min-height: 90vh;
   position: relative;
   opacity: 0;
 
@@ -294,7 +294,7 @@ p {
      width: 100%;
   }
   body {
-    height: 70vh !important;
+    height: 90vh !important;
   }
   #side {
     position: fixed;
@@ -315,6 +315,12 @@ p {
   height: 90vh !important;
 }
 
+}
+
+@media (max-width: 2000px) and (orientation: portrait) {
+  .page {
+    max-height: 90vh !important;
+  }
 }
 
 @media (max-width: 2000px) and (orientation: landscape) {
