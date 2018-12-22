@@ -384,10 +384,6 @@ right: 25px;
     text-align: center;
 }
 
-.wrapper {
-  height: 80vh !important;
-}
-
 #home {
-  height: 80vh !important;
+  height: 50vh !important;
 }
