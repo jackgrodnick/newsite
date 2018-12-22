@@ -293,6 +293,9 @@ p {
      margin-left: 0px;
      width: 100%;
   }
+  body {
+    height: 70vh;
+  }
   #side {
     position: fixed;
     background: transparent;
