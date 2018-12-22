@@ -215,7 +215,7 @@ main.open nav#side::before {
   //overflow: scroll-y;
   position: relative;
   opacity: 0;
-
+      height: -webkit-fill-available;
   transition: transform 0.4s;
   display: none;
   padding: 25px;
@@ -445,6 +445,7 @@ transform: rotate(90deg);
 
 #home {
   min-height: 93vh;
+    height: -webkit-fill-available;
 }
 
 #home {
