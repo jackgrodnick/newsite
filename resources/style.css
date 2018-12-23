@@ -241,10 +241,11 @@ p {
 }
 
 #home {
-  background-image: url("./images/turtle.jpg");
+  background-image: url("./images/turtle2.jpg");
   background-repeat: no-repeat;
   background-size: cover, contain;
   background-position: center;
+  bac
 }
 
 
@@ -442,4 +443,11 @@ main.open .logog {
   display: none;
   width: 100%;
     text-align: center;
+}
+
+.middle-home {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 12%;
 }
