@@ -245,7 +245,7 @@ p {
   background-image: url("./images/turtle3.jpg");
   background-repeat: no-repeat;
   background-size: cover, contain;
-  background-position: center;
+  background-position: right;
   bac
 }
 
@@ -449,7 +449,7 @@ main.open .logog {
 .middle-home {
     position: absolute;
     top: 50%;
-    transform: translate(0%, -67%);
+    transform: translate(0%, -89%);
     margin-left: 15%;
 }
 
