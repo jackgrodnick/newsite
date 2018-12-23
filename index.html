@@ -21,7 +21,7 @@
     <div class="page active" id="home">
 
       <div class="middle-home">
-        <h1 class="middle-home-h1">"A person that has the<br>ability to act on long term<br>goals even in the face of<br>some criticism in the short<br>term will be successful in<br>his goals"<span class="me"><span class="tre">—</span>Jack G</span></h1>
+        <h1 class="middle-home-h1">The<br>opportunity<br>American's deserve</h1>
       </div>
 
       <div class="bottom-left">
@@ -130,6 +130,10 @@
 
     TweenMax.staggerFrom(".bottom-left-bottom", 1.5, {
       delay: 0.6, opacity: 0, y: 20, ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.staggerFrom(".middle-home-h1", 2, {
+      delay: 0.1, opacity: 0, y: 20, ease: Expo.easeInOut
     }, 0.2)
 
     TweenMax.from(".side-strip", 2, {
