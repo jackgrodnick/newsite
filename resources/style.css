@@ -168,7 +168,7 @@ main.open .wrapper[data-selected="learn"] ~ nav#side::before {
 }
 
 main.open #nav-toggle {
-  top: 35%;
+  top: 38%;
   left: 42px;
 }
 
