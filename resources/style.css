@@ -451,3 +451,14 @@ main.open .logog {
     transform: translate(0%, -50%);
     margin-left: 12%;
 }
+
+
+@media screen and (max-width: 1024px) {
+  .middle-home-h1 {
+    font-size: 33px;
+  }
+}
+
+.me {
+      margin-left: 27px;
+}
