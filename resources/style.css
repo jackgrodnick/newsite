@@ -448,8 +448,8 @@ main.open .logog {
 .middle-home {
     position: absolute;
     top: 50%;
-    transform: translate(0%, -50%);
-    margin-left: 12%;
+    transform: translate(0%, -67%);
+    margin-left: 15%;
 }
 
 
