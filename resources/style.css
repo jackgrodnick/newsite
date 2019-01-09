@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  background: #38c5b9;
+  background: #e01a1a;
   font-family: "Open Sans";
   color: white;
   line-height: 1.5;
@@ -444,6 +444,10 @@ main.open .logog {
   display: none;
   width: 100%;
     text-align: center;
+    transition: all 0.9s ease-in;
+-webkit-transition: all 0.9s ease-in;
+  -moz-transition: all 0.9s ease-in;
+  -o-transition: all 0.9s ease-in;
 }
 
 .middle-home {
@@ -478,3 +482,163 @@ main.open .logog {
 .hamburger {
   font-family: monospace;
 }
+
+
+
+
+.mainn {
+    flex: 1;
+    display: flex;
+    padding-top: 30px;
+    background: black;
+    padding-bottom: 30px;
+}
+.sidebarrr {
+	background: black;
+	flex:0 0 400px;
+	padding: 20px;
+  text-align: center;
+  font-size: 38px;
+  color: #08fdd8;
+  font-weight: bolder;
+}
+.contenttt {
+	background: black;
+	padding: 30px;
+	flex:1;
+  text-align: center;
+}
+@media screen and (max-width:680px) {
+	.sidebarrr {
+    flex: 0;
+  }
+  .contenttt {
+    padding-top: 0px !important;
+  }
+	.mainn {
+    flex-direction:column;
+  }
+}
+
+#about-us {
+  height: 200vh !important;
+}
+
+/* team */
+
+/* Team Member CSS
+===========================*/
+
+h1.team-h1 {
+    background: black;
+    flex: 0 0 400px;
+    /* padding: 20px; */
+    text-align: center;
+    font-size: 38px;
+    color: #08fdd8;
+    font-weight: bolder;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.team-container {
+  border-top: 1px #e9e9e9 solid;
+  background: black;
+}
+
+.team-member {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.team-member:last-child {margin-right: 0;}
+
+
+.team-member span,
+.team-member h3 {
+}
+
+.team-member h3 {
+  color: #00ffd7;
+margin: 0;
+padding: 13px;
+}
+
+.email {
+  color: #EA2678;
+
+}
+
+.team-member span {
+  display: block;
+
+}
+team-photo {
+    /* border-radius: 50%; */
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    transition: 0.1s transform ease-in-out;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team-photo:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
+/* code for phone layout */
+@media (max-width:850px){
+  .team-member {
+
+  }
+
+}
+
+
+
+@media (max-width:650px){
+  .team-member {
+    float: none;
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .team-member h3,
+  .team-member span {
+    margin: 15px auto;
+  }
+}
+
+img.team-photo {
+  width: 84%;
+}
+
+
+/* ENDS Team Member CSS
+===========================*/
