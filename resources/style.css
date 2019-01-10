@@ -607,6 +607,10 @@ team-photo {
     padding-right: 15px;
 }
 
+.team-photo {
+    transition: 0.4s all ease-in-out;
+}
+
 .team-photo:hover {
   transform: scale(1.05);
   cursor: pointer;
