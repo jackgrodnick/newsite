@@ -864,6 +864,7 @@ margin-top: 7px;
   overflow: hidden;
   position: relative;
   flex: auto;
+  min-height: 700px;
 }
 .product--blue {
   background-image: url(./images/th.jpg);
