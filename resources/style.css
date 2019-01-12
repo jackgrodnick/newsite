@@ -782,13 +782,14 @@ margin-top: 7px;
 }
 
 .code-bx {
-    width: fit-content;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 50px;
-    background: black;
-    white-space: nowrap;
+  width: fit-content;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  padding: 50px;
+  background: black;
+  white-space: nowrap;
+  float: right;
 }
 
 .mainn3 {
