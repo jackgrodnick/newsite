@@ -784,8 +784,8 @@ margin-top: 7px;
 .code-box {
     width: fit-content;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 20px;
     padding: 50px;
     background: black;
     white-space: nowrap;
