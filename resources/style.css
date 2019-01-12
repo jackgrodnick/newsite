@@ -764,17 +764,20 @@ margin-top: 7px;
     right: 0;
     padding: 50px;
     background: black;
+    white-space: nowrap;
 }
 
 .title-c {
   text-align: center;
   font-size: 25px;
+  white-space: nowrap;
 }
 
 .title-cp {
   text-align: center;
   font-size: 17px;
   color: #08fdd8;
+  white-space: nowrap;
 }
 
 .code-box {
@@ -784,6 +787,7 @@ margin-top: 7px;
     top: 0;
     padding: 50px;
     background: black;
+    white-space: nowrap;
 }
 
 .mainn3 {
@@ -833,6 +837,7 @@ margin-top: 7px;
     top: 0;
     left: 0;
     padding: 50px;
+    white-space: nowrap;
 }
 
 
