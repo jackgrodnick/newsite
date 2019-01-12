@@ -756,14 +756,14 @@ margin-top: 7px;
       background-position: center;
       height: -webkit-fill-available;
       width: -webkit-fill-available !important;
+      position: relative;
 }
 
 .contact-bx {
   width: fit-content;
-  position: fixed;
+  position: absolute;
   background: black;
   white-space: nowrap;
-  float: right;
   bottom: 0;
   right: 0;
   padding: 50px;
@@ -784,13 +784,12 @@ margin-top: 7px;
 
 .code-bx {
   width: fit-content;
-  position: relative;
+  position: absolute;
   right: 0px;
   top: 0px;
   padding: 50px;
   background: black;
   white-space: nowrap;
-  float: right;
 }
 
 .mainn3 {
@@ -835,13 +834,12 @@ margin-top: 7px;
 
 .twitter-bx {
   width: fit-content;
-  position: relative;
+  position: absolute;
   left: 0px;
   top: 0px;
   padding: 50px;
   background: black;
   white-space: nowrap;
-  float: left;
 }
 
 
