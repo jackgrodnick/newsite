@@ -845,6 +845,15 @@ margin-top: 7px;
   float: left;
 }
 
+.wall-bx {
+  position: absolute;
+  background: black;
+  white-space: nowrap;
+  bottom: 0;
+  left: 0;
+  padding: 50px;
+}
+
 
 /* merchandise */
 
