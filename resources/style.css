@@ -233,14 +233,6 @@ main.open nav#side::before {
   z-index: -1;
 }
 
-p {
-  background: rgba(255, 255, 255, 0.85);
-  font-family: 'Open Sans', arial;
-  padding: 10px;
-  font-size: 20px;
-  max-width: 600px;
-}
-
 #home {
   background-image: url("./images/turtle4.jpg");
   background-repeat: no-repeat;
@@ -823,7 +815,7 @@ margin-top: 7px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 0px) {
 .mainn3 {
     flex: 1;
     display: flex;
@@ -855,10 +847,8 @@ margin-top: 7px;
 }
 
 .product, .product--blue, .product--orange, .product--red, .product--green, .product--yellow, .product--pink {
-  box-shadow: 1px 5px 15px #CCC;
   width: 25em;
   height: auto;
-  border-radius: 3px;
   padding: 2em;
   margin: 1em;
   overflow: hidden;
@@ -912,14 +902,14 @@ margin-top: 7px;
   flex-flow: column wrap;
 }
 .product_inner p {
-  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  color: #08fdd8;
 }
 .product_inner button {
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: #FFF;
   border-radius: 3px;
   padding: 1em 3em;
-  margin: 1em 0 0 0;
   background: none;
   cursor: pointer;
   transition: background ease-in .25s;
@@ -963,4 +953,20 @@ margin-top: 7px;
 .product_overlay i {
   color: rgba(43, 45, 66, 0.7);
   font-size: 1.5em;
+}
+
+.show-no {
+  visibility: hidden;
+}
+
+#merchandise {
+  background: black;
+
+}
+
+.text-p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: black;
 }
