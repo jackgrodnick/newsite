@@ -751,10 +751,11 @@ margin-top: 7px;
 
 #contactp {
   background-image: url(./images/trump-fail-004.jpg);
-background-repeat: no-repeat;
-background-size: cover, contain;
-background-position: center;
-height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover, contain;
+      background-position: center;
+      height: -webkit-fill-available;
+      width: -webkit-fill-available !important;
 }
 
 .contact-box {
