@@ -760,13 +760,13 @@ margin-top: 7px;
 
 .contact-bx {
   width: fit-content;
-  position: relative;
-  right: 0px;
-  bottom: 0px;
-  padding: 50px;
+  position: fixed;
   background: black;
   white-space: nowrap;
   float: right;
+  bottom: 0;
+  right: 0;
+  padding: 50px;
 }
 
 .title-c {
