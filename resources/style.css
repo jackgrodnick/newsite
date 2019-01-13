@@ -579,16 +579,19 @@ main.open .logog {
 
 .sidebarrr3 {
 	background: black;
-	flex:0 0 40%;
+	flex:0 0 50%;
 	padding: 20px;
   text-align: center;
   font-size: 38px;
   color: #08fdd8;
   font-weight: bolder;
+  background-image: url(./images/perddd.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #about-us {
-  height: 200vh !important;
+  /* height: 200vh !important; */
 }
 
 /* team */
@@ -807,6 +810,7 @@ margin-top: 7px;
 @media screen and (max-width: 800px) {
 	.sidebarrr3 {
     flex: 0 !important;
+    min-height: 80%;
   }
 
   .contenttt3 {
@@ -821,6 +825,38 @@ margin-top: 7px;
     position: inherit !important;
     transform: none !important;
   }
+  .lilly-p {
+    position: inherit !important;
+width: fit-content;
+float: right;
+text-align: right;
+right: 48%;
+letter-spacing: 5px !important;
+font-weight: bolder;
+font-size: 44px !important;
+line-height: 0.7;
+opacity: 0.7;
+  }
+  .lilly-b {
+    padding-top: 30px;
+  }
+}
+
+.lilly-b {
+  font-weight: bolder;
+    color: #08fdd8;
+}
+.lilly-p {
+  position: absolute;
+  width: fit-content;
+  float: right;
+  text-align: right;
+  right: 48%;
+  letter-spacing: 9px;
+  font-weight: bolder;
+  font-size: 59px;
+  line-height: 0.7;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 0px) {
@@ -876,25 +912,25 @@ margin-top: 7px;
   min-height: 700px;
 }
 .product--blue {
-  background-image: url(./images/th.jpg);
+  background-image: url(./images/per.ds.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .product--orange {
-  background-image: url(./images/th.jpg);
+  background-image: url(./images/perd.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .product--red {
-  background-image: url(./images/th.jpg);
+  background-image: url(./images/perdd.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .product--green {
-  background-image: url(./images/th.jpg);
+  background-image: url(./images/perddd.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -989,4 +1025,26 @@ margin-top: 7px;
   bottom: 0;
   width: 100%;
   background: black;
+}
+
+
+.syy {
+  position: relative;
+  background: black;
+}
+
+.syy1 {
+  font-size: 13px;
+      color: #08fdd8;
+      margin: 0;
+      padding-left: 40px;
+    padding-right: 40px;
+}
+
+.sourcess {
+  background: black;
+    margin: 0;
+    text-align: center;
+    font-size: 37px;
+    padding-top: 36px;
 }
