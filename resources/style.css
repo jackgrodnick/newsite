@@ -561,6 +561,7 @@ main.open .logog {
 
 .pic {
     position: relative;
+    max-width: 400px;
     top: 50%;
     transform: translateY(-50%);
 }
