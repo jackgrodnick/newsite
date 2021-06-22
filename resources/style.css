@@ -1077,3 +1077,10 @@ opacity: 0.7;
    min-height: 100vh !important;
 }
 
+#home {
+   min-height: 100vh !important;
+}
+
+#contactp {
+   min-height: 100vh !important;
+}
