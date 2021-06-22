@@ -1073,4 +1073,7 @@ opacity: 0.7;
 .menu {
    background-color: #e01a1a;
 }
+.page .preview .active {
+   min-height: 100vh !important;
+}
 
