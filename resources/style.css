@@ -1070,4 +1070,7 @@ opacity: 0.7;
 .page .active {
    min-height: 100vh !important;
 }
+.menu {
+   background-color: #e01a1a;
+}
 
